@@ -1158,7 +1158,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../../images/nikita-kachanovsky-OVbeSXRk_9E-unsplash.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1693,13 +1693,22 @@ input, select, textarea {
 
 /* About Me Photo */
 .about-photo {
-    max-width: 300px; /* Adjust the width as needed */
-    border-radius: 50%; /* Makes the image circular, optional */
+    width: 100%;
+    max-width: 600px; /* don't go too wild */
+    border-radius: 50%;
     display: block;
-    margin: 0 auto; /* Centers the image horizontally */
-    box-shadow: none; /* Adds a subtle shadow, optional */
+    margin: 0 auto;
+    box-shadow: none;
 }
 
 .image:before {
     content: none; /* Removes the overlay background */
+}
+
+.relevant-courses.two-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5em 2em;
+  list-style-type: disc;
+  padding-left: 1.5em;
 }
