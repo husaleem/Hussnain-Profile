@@ -359,31 +359,35 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
+							<form id="contact-form" method="POST" action="https://formspree.io/f/xpwrropl">
+							<div class="fields">
+								<div class="field half">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" required />
+								</div>
+								<div class="field half">
+								<label for="email">Email</label>
+								<input type="email" name="email" id="email" required />
+								</div>
+								<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" rows="4" required></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><input type="submit" value="Send Message" class="primary" /></li>
+								<li><input type="reset" value="Reset" /></li>
+							</ul>
+							</form>
+
+							<!-- Success Message Placeholder -->
+							<p id="form-success" style="display: none; color: #00ff99; font-weight: bold; margin-top: 1em;">
+							✅ Your message has been sent! I’ll get back to you soon.
+							</p>
 								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.instagram.com/__husssy__/profilecard/?igsh=d3J4Y3owcXFkZXdj" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/husaleem" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/husaleem/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								</ul>
 							</article>
 
@@ -456,6 +460,37 @@
 			});
 		});
 		</script>
+
+		<script>
+		document.getElementById("contact-form").addEventListener("submit", async function (e) {
+		e.preventDefault(); // prevent default form submission
+
+		const form = e.target;
+		const formData = new FormData(form);
+
+		const response = await fetch(form.action, {
+			method: form.method,
+			body: formData,
+			headers: {
+			'Accept': 'application/json'
+			}
+		});
+
+		if (response.ok) {
+			form.reset(); // clear the form
+			const successMsg = document.getElementById("form-success");
+			successMsg.style.display = "block";
+
+			// Hide the message after 4 seconds
+			setTimeout(() => {
+			successMsg.style.display = "none";
+			}, 4000);
+		} else {
+			alert("Something went wrong. Please try again later.");
+		}
+		});
+		</script>
+
 
 	</body>
 </html>
