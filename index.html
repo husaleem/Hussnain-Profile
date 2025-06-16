@@ -162,8 +162,26 @@
 									</ul>
 								</div>
 								<hr>
-								
+
 								<!-- Job 2 -->
+								<div class="job">
+									<div class="job-header">
+										<h3>Software Developer Co-op</h3>
+										<span class="job-date">September 2024 - May 2025</span>
+									</div>
+									<h4>Dynalogics LLC</h4>
+									<ul>
+										<li>Developed and tested new ERP modules using Python for business logic and SQL for data management, resulting in a 25% decrease in processing load for critical operations.</li>
+										<li>Implemented intuitive front-end features using React and collaborated with UI/UX designers via Figma to translate prototypes into polished interfaces, improving user engagement by 20%</li>
+										<li>Collaborated with UI/UX designers on Figma and with back-end developers via Git to deliver new ERP features every two weeks, ensuring a cohesive user experience and timely fulfillment of stakeholder requirements</li>
+										<li>Contributed to the development of enterprise ERP modules used by small-to-medium-sized businesses across finance, inventory, payroll, and CRM.</li>
+										<li>Built and maintained front-end features using HTML, CSS, JavaScript, and worked closely with senior developers to ensure cross-browser compatibility and responsive design.</li>
+										<li>Collaborated on API integration and backend logic for real-time data flows between ERP modules using RESTful services and SQL-based databases.</li>
+									</ul>
+								</div>
+								<hr>
+								
+								<!-- Job 3 -->
 								<div class="job">
 									<div class="job-header">
 										<h3>Software Engineer Intern</h3>
@@ -187,8 +205,8 @@
 									<h4>Verizon Wireless</h4>
 									<ul>
 										<li>Achieved 110%+ of district sales targets consistently, leading district sales multiple times witih the year and setting high performance benchmark.</li>
-										<li>•Collaborated with different stores and management to help support their store operation, training, bolster sales, and enabled seamless inventory transfers among stores.</li>
-										<li>•Facilitated meetings with senior leadership for sales strategies and marketing initiatives.</li>
+										<li>Collaborated with different stores and management to help support their store operation, training, bolster sales, and enabled seamless inventory transfers among stores.</li>
+										<li>Facilitated meetings with senior leadership for sales strategies and marketing initiatives.</li>
 									</ul>
 								</div>
 								<hr>
@@ -196,9 +214,66 @@
 
 						<!-- About -->
 							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+								<h2 class="major">Projects</h2>
+								<!-- Project Filter Navbar -->
+								<div class="project-navbar">
+								<button onclick="filterProjects('all')" class="active">All</button>
+								<button onclick="filterProjects('ux')">UX/UI</button>
+								<button onclick="filterProjects('software')">Software</button>
+								<button onclick="filterProjects('data')">Data</button>
+								<button onclick="filterProjects('other')">Other</button>
+								</div>
+
+								<!-- Projects Section -->
+								<div class="project-list">
+								<div class="project-card ux">
+									<h3>Bonjour Montclair Café</h3>
+									<p>  A responsive multi-page website built for a local French café. Designed to reflect the café’s cozy ambiance and modern charm, featuring a dynamic menu, photo gallery, contact form, and integrated map for visitors.</p>
+									<ul>
+										<li><strong>Tools:</strong> Figma, HTML, CSS, JavaScript, Tailwind CSS</li>
+										<li><strong>Role:</strong> UX/UI Design + Front-End Development</li>
+										<li><strong>Type:</strong> Freelance Client Project</li><br>
+										<a href="https://bonjourmontclaircafe.com" target="_blank">View Project</a> <br>
+										<a href="https://github.com/husaleem/FredsWebpage" target="_blank">Project Repository</a>
+									</ul>
+								</div>
+
+								<div class="project-card software">
+									<h3>Food Finder App</h3>
+									<p>Swipe-based Android app that displays nearby restaurants using Google Maps API.</p>
+								</div>
+
+								<div class="project-card software ">
+								<h3>iXR Pedestrian Simulation (Capstone)</h3>
+								<p>
+									A VR simulation built with Unity and KATVR that allows users to experience realistic pedestrian movement in a virtual city environment. Developed as part of a senior capstone project focused on immersive first-person design, character animations, and interactive scenarios.
+								</p>
+								<ul>
+									<li><strong>Tools:</strong> Unity, C#, Blender, KATVR SDK, Oculus Quest</li>
+									<li><strong>Role:</strong> Lead Developer + Animation Designer</li>
+									<li><strong>Type:</strong> Capstone Team Project (3rd Place Winner)</li><br>
+									<a href="https://github.com/husaleem/NJITCapstone" target="_blank">Project Repository</a><br>
+									<a href="https://github.com/husaleem/NJITCapstone/blob/main/README.md" target="_blank">View Poster</a>
+								</ul>
+								</div>
+
+								<div class="project-card ux">
+									<h3>Master Clips Barber Shop</h3>
+									<p>
+										A modern, gallery-focused website built for a local barbershop to showcase haircut styles and attract new clients. Features include a visually rich gallery, integrated customer reviews, and a mobile-optimized layout.
+									</p>
+									<ul>
+										<li><strong>Tools:</strong> Figma, HTML, CSS, Tailwind CSS, JavaScript</li>
+										<li><strong>Role:</strong> UX/UI Design + Front-End Development</li>
+										<li><strong>Type:</strong> Freelance Client Project</li><br>
+										<a href="" target="_blank">View Project (Not Yet Deployed)</a><br>
+										<a href="https://github.com/husaleem/MasterClipsWebPage" target="_blank">Project Repository</a>
+									</ul>
+								</div>
+
+
+								</div>
+																
 							</article>
 
 						<!-- Contact -->
@@ -232,247 +307,7 @@
 								</ul>
 							</article>
 
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
-
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
-
-								<section>
-									<h3 class="major">Lists</h3>
-
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
-
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-
-							</article>
+							
 
 					</div>
 
@@ -492,6 +327,55 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				function filterProjects(category) {
+				const cards = document.querySelectorAll('.project-card');
+				const buttons = document.querySelectorAll('.project-navbar button');
+
+				// Update button states
+				buttons.forEach(btn => {
+					btn.classList.remove('active');
+					if (btn.getAttribute('onclick') === `filterProjects('${category}')`) {
+					btn.classList.add('active');
+					}
+				});
+
+				cards.forEach(card => {
+					const matchesCategory = category === 'all' || card.classList.contains(category);
+
+					if (!matchesCategory) {
+					// Fade out first, then hide after transition
+					card.classList.add('fade-out');
+					setTimeout(() => {
+						card.style.display = 'none';
+					}, 300); // matches transition duration
+					} else {
+					// Reset display, then force reflow, then fade in
+					card.style.display = 'block';
+					void card.offsetWidth; // force reflow to restart animation
+					card.classList.remove('fade-out');
+					}
+				});
+				}
+
+				// On page load
+				document.addEventListener("DOMContentLoaded", function () {
+				filterProjects('all');
+				});
+				</script>
+
+
+			<script>
+		const buttons = document.querySelectorAll('.project-navbar button');
+
+		buttons.forEach(btn => {
+			btn.addEventListener('click', () => {
+			buttons.forEach(b => b.classList.remove('selected'));
+			btn.classList.add('selected');
+			});
+		});
+		</script>
 
 	</body>
 </html>

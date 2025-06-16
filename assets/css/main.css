@@ -1718,3 +1718,86 @@ input, select, textarea {
   margin-bottom: 0; /* Removes extra space below nested lists */
   padding-left: 1.5em; /* Keeps indentation */
 }
+
+.project-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+
+.project-navbar button {
+  display: inline-flex;
+  align-items: center;  
+  justify-content: center; 
+  color: #fff;
+  text-decoration: none;
+  border: 0px solid #fff;
+  border-radius: 5px;
+  padding: 0.5em 1.25em;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+   font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+.project-navbar button:hover {
+  background: #ffffff2c;
+  color: #1b1f22;
+}
+
+.project-navbar button.selected {
+  border: 1px solid #fff;
+  box-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.6),  /* inner glow */
+    0 0 20px rgba(255, 255, 255, 0.4);  /* outer glow */
+  background-color: transparent;
+  color: #fff;
+}
+.project-navbar button.active {
+  border: 1px solid #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Project card style */
+.project-card {
+  display: none;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 1.25em 1.25em 0.5em 1.25em; /* top, right, bottom, left */
+  margin-bottom: 1.5em;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+/* Mobile responsive tweaks */
+@media screen and (max-width: 480px) {
+  .project-navbar {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .project-navbar button {
+    width: auto;
+    text-align: center;
+  }
+}
+
+.project-card {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.project-card.fade-out {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+}
